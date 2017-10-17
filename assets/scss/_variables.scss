@@ -109,10 +109,10 @@ $theme-colors: (
   danger: $red,
   light: $gray-100,
   dark: $gray-900,
-  link-base: #330064,       // BootCats
-  link-visited: #330064, // BootCats
-  link-hover: #330064,     // BootCats
-  link-active: #330064    // BootCats
+  link-base: $white,       // BootCats
+  link-visited: $white, // BootCats
+  link-hover: $white,     // BootCats
+  link-active: $white    // BootCats
 ) !default;
 
 // Set a specific jump point for requesting color jumps
@@ -161,7 +161,7 @@ $sizes: (
 // Settings for the `<body>` element.
 
 $body-bg:       #ffffff !default;
-$body-color:    #330064 !default;
+$body-color:    $white !default;
 $inverse-bg:    $gray-900 !default;    // BootCats
 $inverse-color: $gray-100 !default; // BootCats
 
@@ -247,7 +247,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 
-$font-family-other: "Rubik", fantasy !default;
+$font-family-other: "Montserrat" !default;
 $font-family-base:       $font-family-other !default;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
@@ -273,7 +273,7 @@ $headings-font-family:   Rubik !default;
 $headings-font-weight:   900 !default;
 $headings-letter-spacing: 0pt !default; // BootCats
 $headings-line-height:   1.2 !default;
-$headings-color:         #330064 !default;
+$headings-color:         $white !default;
 $inverse-headings-color: $gray-100 !default; // BootCats
 
 $display1-size: 6rem !default;
@@ -564,14 +564,14 @@ $nav-tabs-link-active-bg:                     $body-bg !default;
 $nav-tabs-link-active-border-color:           #ddd !default;
 
 $nav-pills-border-radius:     4px 4px 4px 4px !default;
-$nav-pills-link-active-color: #330064 !default;
+$nav-pills-link-active-color: $white !default;
 $nav-pills-link-active-bg:    #ffffff !default;
 
 // Navbar
 
 $navbar-bg:                         #ffffff !default;
 $navbar-border-radius:              0 !default;
-$navbar-border-color:               #330064 !default;
+$navbar-border-color:               $white !default;
 
         $navbar-border-width:        2px 0px 0px 0px !default;
       
@@ -596,12 +596,12 @@ $navbar-dark-disabled-color:        rgba($white,.7) !default;
 $navbar-dark-toggler-icon-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
 $navbar-dark-toggler-border-color:  rgba($white, 1) !default;
 
-$navbar-light-color:                rgba(#330064,.85) !default;
-$navbar-light-hover-color:          rgba(#330064,.9) !default;
-$navbar-light-active-color:         rgba(#330064,1) !default;
-$navbar-light-disabled-color:       rgba(#330064,.7) !default;
+$navbar-light-color:                rgba($white,.85) !default;
+$navbar-light-hover-color:          rgba($white,.9) !default;
+$navbar-light-active-color:         rgba($white,1) !default;
+$navbar-light-disabled-color:       rgba($white,.7) !default;
 $navbar-light-toggler-icon-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23") !default;
-$navbar-light-toggler-border-color: rgba(#330064, 1) !default;
+$navbar-light-toggler-border-color: rgba($white, 1) !default;
 
 // Pagination
 
@@ -640,7 +640,7 @@ $jumbotron-border-color: #e1e1e1 !default;
         $jumbotron-border-width:        1px !default;
       
 
-$jumbotron-color: #330064 !default;
+$jumbotron-color: $white !default;
 
 
 // Cards
@@ -655,7 +655,7 @@ $card-border-color:        #e1e1e1 !default;
 $card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:              rgba($black, .03) !default;
 $card-bg:                  #fff !default;
-$card-color:               #330064 !default;
+$card-color:               $white !default;
 $card-box-shadow: 0px 5px 12px 2px rgba(51, 0, 100, 0.12),  inset 0px 0px 0px 0px rgba(0, 0, 0, 0) !default;
 
 $card-img-overlay-padding: 1.25rem !default;

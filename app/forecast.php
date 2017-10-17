@@ -39,3 +39,4 @@
 
   // Get our forecast data back
   $forecast = json_decode(file_get_contents($forecast), true);
+?>
