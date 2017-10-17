@@ -3,13 +3,21 @@
   <?php //print_r($forecast); ?>
 </pre>
 <main class="container py-5 text-center">
-  <h3 class="results">
-    WEATHER JAMZ
-  </h1>
   <div class="text-left py-5 mx-auto" style="max-width: 320px;">
     <?php include 'partials/form.php'; ?>
   </div>
-  The year is <?php echo $yearpls; ?><?php echo round($forecast['currently']['temperature']); ?>'
+
+  <div class="row">
+
+    <h4 class="col-12">
+    The weather outside is feeling <?php 
+    if ($tempy >= 0 && $tempy <= 99){ 
+      echo '19';
+    } else {
+      echo '20';
+    } ?><?php echo round($forecast['currently']['temperature']); ?>
+    </h4>
+  </div>
   <div class="row">
     <div class= "col-6 p-1 my-5 mx-auto"> 
     <p class="mb-0"> <?php echo $place; ?></p>
@@ -52,16 +60,10 @@
       $condition = '<iframe src="https://open.spotify.com/embed/user/frazze/playlist/6PMe2vPm0pTWW1PXtoEjTY" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>';
     }
 
-    if ($tempy >= 0 && $tempy <= 99){
-      $yearpls = '19';
-    } elseif($tempy >= 100 && $tempy <= 109){
-      $yearpls = '20';
-    }
-
     ?>
     </div>
     <div class="col-6 p-4 my-5 mx-auto">
-    <?php echo $condition; ?>
+    <p style = 'font-weight: 400'>Here's some songs from that decade ;)</p><?php echo $condition; ?>
   </div>
   </div>
 
@@ -79,6 +81,8 @@
     </p>
   </div> -->
 
-
+  <video autoplay loop id="video-background" muted plays-inline>
+    <source src="assets/dist/images/cloudsdown.mp4">
+  </video>
 </main>
 <?php include 'partials/footer.php'; ?>

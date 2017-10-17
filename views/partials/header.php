@@ -9,3 +9,9 @@
     <link rel="stylesheet" href="assets/dist/css/styler.css">
   </head>
   <body>
+  	<div class="header">
+  	<h1 class="text-center">
+  	  WEATHER JAMZ
+  	</h1>
+  	</div>
+
